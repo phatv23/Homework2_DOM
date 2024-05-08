@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <div class="question" id="question1">
+        <p>1. PIM ย่อมาจากอะไร ?</p>
+        <button class="button" onclick="checkAnswer('a','question1')">A) พีไอเอ็ม</button>
+        <button class="button" onclick="checkAnswer('b','question1')">B) ปิ๋ม</button>
+        <button class="button" onclick="checkAnswer('c','question1')">C) พิม</button>
+        <button class="button" onclick="checkAnswer('d','question1')">D) ภีม</button>
+        <div id="result1" class="result"></div>
+        <br><br>
+        <button class="next" onclick="showQuestion('question2')">Next</button>
+    </div>
+
+    <div class="question hidden" id="question2">
+        <p>2. RPA ย่อมาจากอะไร ?</p>
+        <button class="button" onclick="checkAnswer('a','question2')">A) Robot Progress Automation</button>
+        <button class="button" onclick="checkAnswer('b','question2')">B) Robot Process Automation</button>
+        <button class="button" onclick="checkAnswer('c','question2')">C) Robotic Process Automation</button>
+        <button class="button" onclick="checkAnswer('d','question2')">D) Robotic Progress Automation</button>
+        <div id="result2" class="result"></div>
+        <br><br>
+        <button class="next" onclick="calculateScore()">Finish</button>
+    </div>
+
+    <div id="scoreDisplay" class="result hidden"></div>
+
+    <button id="newStartButton" class="hidden" onclick="resetQuiz()">New Start</button>
+
+
+    <script src="index.js" charset="utf-8"></script>
+   <!-- <div class="quiz-container">
+       <h1></h1>
+       <p id="question1">1. PIM ย่อมาจากอะไร ?</p>
+       <button class="button" onclick="checkAnswer('a','question1')">A) พีไอเอ็ม</button>
+       <button class="button" onclick="checkAnswer('b','question1')">B) ปิ๋ม</button>
+       <button class="button" onclick="checkAnswer('c','question1')">C) พิม</button>
+       <button class="button" onclick="checkAnswer('d','question1')">D) ภีม</button>
+       <p id="result1"></p>
+
+       <p id="question2">2. RPA ย่อมาจากอะไร ?</p>
+       <button class="button" onclick="checkAnswer('a','question2')">A) Robotic Process Automation</button>
+       <button class="button" onclick="checkAnswer('b','question2')">B) Robot Process Automation</button>
+       <button class="button" onclick="checkAnswer('c','question2')">C) Robot Progress Automation</button>
+       <button class="button" onclick="checkAnswer('d','question2')">D) Robotic Progress Automation</button>
+       <p id="result2"></p>
+       <br><br>
+       <p id="scoreDisplay"></p>
+   </div> -->
+   
+   
+</body>
+</html>
+
+
+
